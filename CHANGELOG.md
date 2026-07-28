@@ -4,7 +4,10 @@ En este archivo se documentan los cambios importantes del proyecto.
 
 ## [Unreleased]
 
-No existen cambios pendientes antes del establecimiento de la línea base.
+### Agregado
+
+- Requisito REQ-007 para cancelar un turno mediante su identificador.
+- Cambio realizado en la rama `change/REQ-007` después de la línea base v1.0.
 
 ## [v1.0]
 

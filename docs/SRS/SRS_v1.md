@@ -6,7 +6,7 @@
 |---|---|
 | Documento | SRS |
 | Versión | 1.0 |
-| Estado | Candidato para línea base |
+| Estado | Modificado mediante cambio controlado posterior a v1.0 |
 | Autor | Baque Wilthon |
 | Proyecto | Sistema básico de turnos |
 
@@ -35,7 +35,7 @@ La versión 1.0 no incluye base de datos, autenticación ni interfaz gráfica.
 |---|---|---|---|
 | REQ-005 | Rendimiento | Las operaciones deberán responder en menos de dos segundos con un máximo de 100 turnos. | El registro y la consulta se realizan sin retrasos visibles. |
 | REQ-006 | Mantenibilidad y seguridad | El código deberá organizarse en funciones y no deberá almacenar contraseñas, tokens ni datos sensibles. | La aplicación utiliza funciones separadas y solamente incluye una configuración de ejemplo. |
-
+| REQ-007 | Cancelar turno | El sistema deberá permitir cancelar un turno utilizando su identificador. | Al proporcionar un identificador existente, el estado del turno cambia de `pendiente` a `cancelado`. |
 ## 5. Restricciones
 
 - La aplicación se desarrollará con Python 3.
@@ -54,7 +54,8 @@ La versión 1.0 no incluye base de datos, autenticación ni interfaz gráfica.
 | REQ-004 | `crear_turno()` | `test_rechazar_nombre_vacio()` |
 | REQ-005 | Aplicación completa | Revisión de ejecución |
 | REQ-006 | Código y configuración | Revisión del repositorio |
+| REQ-007 | Componente pendiente | Requisito agregado después de v1.0 |
 
 ## 7. Criterio de aprobación
 
-Los requisitos REQ-001 a REQ-006 podrán formar parte de la línea base v1.0 después de revisar la documentación, ejecutar la aplicación y comprobar las pruebas.
+Los requisitos REQ-001 a REQ-006 pertenecen a la línea base v1.0. El requisito REQ-007 fue agregado posteriormente mediante un cambio controlado.
